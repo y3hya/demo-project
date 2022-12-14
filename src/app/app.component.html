@@ -23,11 +23,7 @@
 
 <h1 [innerHTML]="'1 + 1'"></h1>
 
-<input
-  type="text"
-  (keydown)="theColorHasChangedFunction()"
-  [(ngModel)]="color"
-/>
+<input type="text" (input)="theColorHasChangedFunction()" [(ngModel)]="color" />
 
 {{ color }}
 
@@ -44,6 +40,7 @@
   [class.i-m-having-blues]="color === 'blue'"
   [ngClass]="{ 'class1 class2 class3': color === 'class' }"
   [attr.yahya]="1"
+  (click)="pIsClicked()"
 >
   123
 </p>

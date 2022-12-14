@@ -17,4 +17,8 @@ export class AppComponent {
   theColorHasChangedFunction() {
     this.thecssiwant = 'background-color: ' + this.color;
   }
+
+  pIsClicked() {
+    alert('ouch!!');
+  }
 }
