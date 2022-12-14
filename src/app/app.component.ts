@@ -14,6 +14,8 @@ export class AppComponent {
 
   arrayofclass = ['iamhavinggreens', 'someothercolor'];
 
+  email = '';
+
   theColorHasChangedFunction() {
     this.thecssiwant = 'background-color: ' + this.color;
   }

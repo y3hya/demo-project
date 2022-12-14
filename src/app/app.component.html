@@ -44,3 +44,9 @@
 >
   123
 </p>
+
+<input style="display: block" [(ngModel)]="email" placeholder="email address" />
+<small *ngIf="!email" style="color: red">Please enter email address</small>
+
+<input style="display: block" #phone ngModel placeholder="phone number" />
+<small *ngIf="!phone.value" style="color: red">Please enter phone number</small>
