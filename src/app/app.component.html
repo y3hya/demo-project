@@ -36,3 +36,14 @@
 <p style="background-color: {{ color }}">asdadasdasdas</p>
 
 <p [style]="'background-color:' + color">asdadasdasdas</p>
+
+<p
+  class="hardcoded"
+  [class.no-wow]="color !== 'red'"
+  [class.wow]="color === 'red'"
+  [class.i-m-having-blues]="color === 'blue'"
+  [ngClass]="{ 'class1 class2 class3': color === 'class' }"
+  [attr.yahya]="1"
+>
+  123
+</p>

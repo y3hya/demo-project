@@ -12,6 +12,8 @@ export class AppComponent {
 
   thecssiwant = 'background-color: ' + this.color;
 
+  arrayofclass = ['iamhavinggreens', 'someothercolor'];
+
   theColorHasChangedFunction() {
     this.thecssiwant = 'background-color: ' + this.color;
   }
