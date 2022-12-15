@@ -1,4 +1,4 @@
-<input type="text" [(ngModel)]="title" />
+<!-- <input type="text" [(ngModel)]="title" />
 
 <h1>{{ title }}</h1>
 
@@ -50,3 +50,15 @@
 
 <input style="display: block" #phone ngModel placeholder="phone number" />
 <small *ngIf="!phone.value" style="color: red">Please enter phone number</small>
+ -->
+
+<input style="display: block" #nameinput ngModel placeholder="your name" />
+
+<app-yahya
+  [myname]="nameinput.value"
+  (voted)="recordTheChildsOutput($event)"
+></app-yahya>
+
+<h2 *ngIf="nameinput.value && voteanswer != null">
+  {{ nameinput.value }} has voted {{ voteanswer ? "AGREED" : "DISAGREED" }}
+</h2>

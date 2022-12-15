@@ -1,0 +1,10 @@
+<ng-container *ngIf="myname; else NoNameError">
+  <p>{{ myname }} works!</p>
+
+  <button type="button" (click)="vote(true)">Agree</button>
+  <button type="button" (click)="vote(false)">Disagree</button>
+</ng-container>
+
+<ng-template #NoNameError>
+  <h2>Please Tell me Your Name</h2>
+</ng-template>

@@ -6,21 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'demo-project';
+  // title = 'demo-project';
 
-  color = 'red';
+  // color = 'red';
 
-  thecssiwant = 'background-color: ' + this.color;
+  // thecssiwant = 'background-color: ' + this.color;
 
-  arrayofclass = ['iamhavinggreens', 'someothercolor'];
+  // arrayofclass = ['iamhavinggreens', 'someothercolor'];
 
-  email = '';
+  // email = '';
 
-  theColorHasChangedFunction() {
-    this.thecssiwant = 'background-color: ' + this.color;
-  }
+  voteanswer: any = null;
 
-  pIsClicked() {
-    alert('ouch!!');
+  // theColorHasChangedFunction() {
+  //   this.thecssiwant = 'background-color: ' + this.color;
+  // }
+
+  // pIsClicked() {
+  //   alert('ouch!!');
+  // }
+
+  recordTheChildsOutput(event: boolean | null) {
+    this.voteanswer = event;
   }
 }

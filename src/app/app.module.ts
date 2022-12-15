@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { YahyaComponent } from './yahya/yahya.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, YahyaComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
