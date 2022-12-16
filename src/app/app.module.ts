@@ -5,9 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { YahyaComponent } from './yahya/yahya.component';
+import { LoopItemComponent } from './loop-item/loop-item.component';
 
 @NgModule({
-  declarations: [AppComponent, YahyaComponent],
+  declarations: [AppComponent, YahyaComponent, LoopItemComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -18,6 +18,8 @@ export class AppComponent {
 
   voteanswer: any = null;
 
+  arrayOfString = ['Moojid', 'Saad', 'Yahya'];
+
   // theColorHasChangedFunction() {
   //   this.thecssiwant = 'background-color: ' + this.color;
   // }
