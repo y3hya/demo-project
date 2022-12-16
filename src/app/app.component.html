@@ -1,69 +1,11 @@
-<!-- <input type="text" [(ngModel)]="title" />
+<div class="header">
+  YAHYA COMPUTINGS
+  <a routerLink="/">HOME</a>
+  <a routerLink="/form">FORM</a>
+  <!-- <a href="/form">FORM</a> THIS IS NOT GOOD -->
+</div>
 
-<h1>{{ title }}</h1>
+<!-- Gets HTML from active route and populate here -->
+<router-outlet></router-outlet>
 
-<input type="text" [(ngModel)]="title" />
-
-<br />
-<br />
-<br />
-
-<select [(ngModel)]="title">
-  <option value="demo-project">demo project</option>
-  <option value="other-project">other-project</option>
-</select>
-
-<h1 [innerHTML]="title.length"></h1>
-
-<p style="background-color: red">asdadasdasdas</p>
-
-<p [style]="'background-color: red'">asdadasdasdas</p>
-
-<h1 [innerHTML]="1 + 1"></h1>
-
-<h1 [innerHTML]="'1 + 1'"></h1>
-
-<input type="text" (input)="theColorHasChangedFunction()" [(ngModel)]="color" />
-
-{{ color }}
-
-<p [style]="thecssiwant">asdadasdasdas</p>
-
-<p style="background-color: {{ color }}">asdadasdasdas</p>
-
-<p [style]="'background-color:' + color">asdadasdasdas</p>
-
-<p
-  class="hardcoded"
-  [class.no-wow]="color !== 'red'"
-  [class.wow]="color === 'red'"
-  [class.i-m-having-blues]="color === 'blue'"
-  [ngClass]="{ 'class1 class2 class3': color === 'class' }"
-  [attr.yahya]="1"
-  (click)="pIsClicked()"
->
-  123
-</p>
-
-<input style="display: block" [(ngModel)]="email" placeholder="email address" />
-<small *ngIf="!email" style="color: red">Please enter email address</small>
-
-<input style="display: block" #phone ngModel placeholder="phone number" />
-<small *ngIf="!phone.value" style="color: red">Please enter phone number</small>
- -->
-
-<input style="display: block" #nameinput ngModel placeholder="your name" />
-
-<app-yahya
-  [myname]="nameinput.value"
-  (voted)="recordTheChildsOutput($event)"
-></app-yahya>
-
-<h2
-  *ngIf="nameinput.value && voteanswer != null"
-  [style.font-style]="nameinput.value == 'Yahya' ? 'italic' : 'normal'"
->
-  {{ nameinput.value }} has voted {{ voteanswer ? "AGREED" : "DISAGREED" }}
-</h2>
-
-<app-loop-item [names]="arrayOfString"></app-loop-item>
+<p class="CopyRight">COPYRIGHT YAHYA COMPUTINGS LTD</p>
