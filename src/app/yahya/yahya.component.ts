@@ -16,8 +16,6 @@ export class YahyaComponent implements OnInit, OnChanges {
   @Input() myname: any;
   @Output() voted = new EventEmitter<boolean | null>();
 
-  constructor() {}
-
   ngOnInit() {
     console.log(this.myname);
   }

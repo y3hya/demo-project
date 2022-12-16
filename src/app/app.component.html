@@ -59,6 +59,9 @@
   (voted)="recordTheChildsOutput($event)"
 ></app-yahya>
 
-<h2 *ngIf="nameinput.value && voteanswer != null">
+<h2
+  *ngIf="nameinput.value && voteanswer != null"
+  [style.font-style]="nameinput.value == 'Yahya' ? 'italic' : 'normal'"
+>
   {{ nameinput.value }} has voted {{ voteanswer ? "AGREED" : "DISAGREED" }}
 </h2>
